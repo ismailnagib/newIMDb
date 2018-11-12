@@ -44,6 +44,7 @@ module.exports = {
         })
         .then(({ data }) => {
             redisClient.del('tvs-all')
+            redisClient.del('all-data')
             res.status(200).json(data)
         })
         .catch(err => {
@@ -73,6 +74,7 @@ module.exports = {
         })
         .then(({ data }) => {
             redisClient.del('tvs-all')
+            redisClient.del('all-data')
             res.status(200).json(data)
         })
         .catch(err => {
@@ -87,6 +89,7 @@ module.exports = {
         })
         .then(({ data }) => {
             redisClient.del('tvs-all')
+            redisClient.del('all-data')
             res.status(200).json(data)
         })
         .catch(err => {
